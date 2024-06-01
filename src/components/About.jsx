@@ -8,7 +8,7 @@ const About = ({ darkTheme }) => {
         if (targetElement) {
             window.scrollTo({
                 top: targetElement.offsetTop,
-                behavior: 'smooth',
+                behavior: 'smooth'
             });
         }
     }
@@ -16,7 +16,7 @@ const About = ({ darkTheme }) => {
     return (
 
         <>
-            <div className={`${darkTheme ? 'bg-gray-800 text-white' : 'bg-white'} pt-28 sm:pt-48`} id="about">
+            <div className={`${darkTheme ? 'bg-gray-800 text-white' : 'bg-white'} pt-28 sm:pt-48`} id='about'>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <Grid container direction="row" justifyContent="space-between" alignItems="center" >
                         <Grid item xs={12} sm={6} md={6} textAlign="left">

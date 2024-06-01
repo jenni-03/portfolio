@@ -1,34 +1,35 @@
-import { useState } from "react"
-import About from "../components/About"
-import Footer from "../components/Footer"
-import Info from "../components/Info"
-import Navbar from "../components/Navbar"
-import Skills from "../components/Skills"
-import Tecnologias from "../components/Tecnologias"
+import About from '../components/About'
+import Footer from '../components/Footer'
+import Skills from '../components/Skills'
+import Contact from '../components/Contact'
+import Navbar from '../components/Navbar'
+import Technologies from '../components/Technologies'
+import { ArrowUpward } from '@mui/icons-material'
+import Projects from '../components/Projects'
 
-function Home() {
+function Home () {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
 
-    const [darkTheme, setDarkTheme] = useState(false);
+  return (
+    <>
+      <Navbar />
+      <About />
+      <Projects />
+      <Skills />
+      <Technologies />
+      <Contact />
+      <Footer />
 
-    const toggleTheme = () => {
-        setDarkTheme(!darkTheme);
-    };
-
-    let ds = 1
-
-    let s = ds + 2;
-    console.log(s)
-
-    return (
-        <>
-            <Navbar className='navbar' darkTheme={darkTheme} toggleTheme={toggleTheme} />
-            <About darkTheme={darkTheme} />
-            <Skills darkTheme={darkTheme} />
-            <Info darkTheme={darkTheme} />
-            <Tecnologias darkTheme={darkTheme} />
-            <Footer />
-        </>
-    )
+      <button aria-label='Arrow Up' id='arrowUp' className='scroll-to-top' onClick={scrollToTop}>
+        <ArrowUpward className='scroll-to-top-icon' />
+      </button>
+    </>
+  )
 }
 
 export default Home

@@ -33,9 +33,10 @@ const Footer = () => {
 
             <Stack direction="column" justifyContent="center" alignItems="center" spacing={4}>
             
-                <Typography mt={8} variant='h6'>
-                    XX
-                </Typography>
+                <div className='mt-8'>
+
+                </div>
+            
 
                 <SocialButtons />
 
