@@ -1,6 +1,9 @@
 import { Avatar, Grid } from "@mui/material";
+import { useTheme } from "../context/Context";
 
-const About = ({ darkTheme }) => {
+const About = () => {
+
+  const { darkTheme } = useTheme()
 
     const handleScroll = () => {
         const targetElement = document.getElementById('about');

@@ -32,7 +32,6 @@ const Projects = () => {
             <Grid item xs={12} sm={12} md={12}>
               <Project
                 title='Nuvi App'
-                img='app.png'
                 tech={
                     [
                       { nombre: 'Dart', icono: 'dart.png' },
@@ -44,6 +43,7 @@ const Projects = () => {
                 descripcion='Aplicación móvil para la gestión de la información de los estudiantes de la Universidad Francisco de Paula Santander'
                 imagenes={['app1.png', 'app11.png', 'app111.png', 'app1111.png', 'app11111.png', 'app111111.png', 'app1111111.png', 'app11111111.png']}
               />
+
             </Grid>
           </Grid>
         </Container>

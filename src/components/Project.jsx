@@ -5,10 +5,21 @@ const urlImg = 'https://raw.githubusercontent.com/jenni-03/portfolio/main/src/as
 
 const ImagenEstilo = styled('img')({
   maxWidth: '100%',
-  height: 'auto',
+  height: '100%',
   transition: 'transform 0.3s ease',
   ':hover': {
     transform: 'scale(1.1)'
+  },
+  borderRadius: '5%'
+
+})
+
+const ImagenEstiloGrande = styled('img')({
+  maxWidth: '100%',
+  height: '100%',
+  transition: 'transform 0.3s ease',
+  ':hover': {
+    transform: 'scale(1.5)'
   },
   borderRadius: '5%'
 
@@ -28,9 +39,12 @@ const Project = ({ title, img, tech, github, darkTheme, descripcion, imagenes })
 
     <div className={`px-1 pt-14 mx-auto lg:px-8 ${darkTheme ? 'text-white' : ''}`}>
 
-      <ImagenEstilo loading='lazy' src={urlImg + img} alt={title} />
+      {img
+        ? <ImagenEstilo loading='lazy' src={urlImg + img} alt={title} />
+        : null
+      }
 
-      <div className='flex justify-between items-center pt-4'>
+      <div className='flex justify-between items-center pt-8'>
 
         <h2 className='text-2xl font-bold tracking-tight'>
           {title}
@@ -55,19 +69,19 @@ const Project = ({ title, img, tech, github, darkTheme, descripcion, imagenes })
 
       <div className='gap-8 pt-4'>
 
-        { github ?
-            <button 
-              className={`swing px-6 py-2 border-2 rounded-lg ${darkTheme ? 'text-white border-violet-700 hover:bg-white hover:text-violet-800 hover:border-white' : 'text-violet-800 border-violet-700 hover:bg-violet-800 hover:border-violet-900 hover:text-white'}`}
-              onClick={() => handleShowPage(github)}
-            >
-    
-              <div className='flex items-center gap-2'>
-                <GitHub />
-                <h2 className='text-lg'>GitHub</h2>
-              </div>
-            </button>
+        {github ?
+          <button
+            className={`swing px-6 py-2 border-2 rounded-lg ${darkTheme ? 'text-white border-violet-700 hover:bg-white hover:text-violet-800 hover:border-white' : 'text-violet-800 border-violet-700 hover:bg-violet-800 hover:border-violet-900 hover:text-white'}`}
+            onClick={() => handleShowPage(github)}
+          >
 
-            : null
+            <div className='flex items-center gap-2'>
+              <GitHub />
+              <h2 className='text-lg'>GitHub</h2>
+            </div>
+          </button>
+
+          : null
 
         }
 
@@ -76,15 +90,30 @@ const Project = ({ title, img, tech, github, darkTheme, descripcion, imagenes })
           {descripcion}
         </div>
 
-        <div className="mt-4 w-full flex justify-between">
-          {
-            imagenes.map((item, index) => {
-              return (
-                <ImagenEstilo key={index} loading='lazy' src={urlImg + item} alt={title} />
-              )
-            })
-          }
-        </div>
+        {
+          title != "Nuvi App" ?
+            <div className="mt-4 grid grid-cols-2 justify-center gap-4">
+              {
+                imagenes.map((item, index) => {
+                  return (
+                    <ImagenEstiloGrande key={index} className='m-2' loading='lazy' src={urlImg + item} alt={title} />
+                  )
+                })
+              }
+            </div>
+          :
+            <div className="mt-4 grid grid-cols-3 justify-center gap-8">
+              {
+                imagenes.map((item, index) => {
+                  return (
+                    <ImagenEstilo key={index} className='m-2' loading='lazy' src={urlImg + item} alt={title} />
+                  )
+                })
+              }
+
+            </div>
+
+        }
       </div>
     </div>
   )

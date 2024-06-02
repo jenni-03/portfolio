@@ -11,11 +11,11 @@ const Technologies = () => {
     { url: 'js.webp', alt: 'Javascript' },
     { url: 'dart.png', alt: 'Dart' },
     { url: 'spring-boot.webp', alt: 'Springboot' },
-    { url: 'node.png', alt: 'Node JS' },
+    { url: 'node.webp', alt: 'Node JS' },
     { url: 'angular.webp', alt: 'Angular' },
     { url: 'html.webp', alt: 'HTML' },
     { url: 'css.svg', alt: 'CSS' },
-    { url: 'mongo.png', alt: 'Mongo DB' },
+    { url: 'mongo.webp', alt: 'Mongo DB' },
     { url: `${darkTheme ? 'github-dark.webp' : 'github.webp'}`, alt: 'Github' },
     { url: 'bootstrap.webp', alt: 'Bootstrap' },
     { url: 'jira.svg', alt: 'Jira' }
