@@ -87,14 +87,8 @@ const Navbar = () => {
 
         <div className='fixed inset-0 z-10' />
         <Dialog.Panel className={`fixed inset-y-0 right-0 z-10 w-full overflow-y-auto ${darkTheme ? 'bg-gray-700 sm:ring-gray-900/10' : 'bg-white sm:ring-gray-900/10'} px-6 py-6 sm:max-w-sm sm:ring-1 `}>
-          <div className='flex items-center justify-between'>
-            <a className='-m-1.5 p-1.5' onClick={() => navigate('/')}>
-              <img
-                className='h-8 w-auto'
-                src={urlImg + (darkTheme ? 'logo-footer.webp' : 'logo.webp')}
-                alt='logo'
-              />
-            </a>
+          <div className='flex items-center justify-end'>
+            
             <button
               aria-label='Close menu'
               className={`-m-2.5 rounded-md p-2.5 ${darkTheme ? 'text-white' : 'text-gray-700'}`}

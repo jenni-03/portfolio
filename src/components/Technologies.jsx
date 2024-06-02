@@ -7,6 +7,7 @@ const Technologies = () => {
   const { darkTheme } = useTheme()
 
   const technologies = [
+    { url: 'flutter.png', alt: 'Flutter' },
     { url: `${darkTheme ? 'java-dark.webp' : 'java.webp'}`, alt: 'Java' },
     { url: 'js.webp', alt: 'Javascript' },
     { url: 'dart.png', alt: 'Dart' },
