@@ -40,7 +40,7 @@ const Projects = () => {
                     ]
                 }
                 darkTheme={darkTheme}
-                descripcion='Aplicación móvil para la gestión de la información de los estudiantes de la Universidad Francisco de Paula Santander'
+                descripcion='Aplicación móvil para la gestión de condominios, la cual permite a los residentes y administradores realizar diferentes actividades de manera sencilla y rápida'
                 imagenes={['app1.png', 'app11.png', 'app111.png', 'app1111.png', 'app11111.png', 'app111111.png', 'app1111111.png', 'app11111111.png']}
               />
 
