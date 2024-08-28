@@ -24,7 +24,7 @@ const Projects = () => {
                 }
                 darkTheme={darkTheme}
                 descripcion='Watti Energy es una aplicación móvil diseñada para la gestión integral de sistemas solares. Permite a los usuarios seguir el proceso completo de solicitud de renting solar, desde la inicial hasta la finalización, incluyendo la posibilidad de solicitar visitas técnicas. La app también facilita el monitoreo detallado del estado de la planta solar, ofreciendo información sobre el consumo y la generación de energía en tiempo real, con gráficos explicativos diarios, semanales y mensuales.'
-                imagenes={['watti-1.png', 'watti-2.png', 'watti-3.png', 'watti-4.png', 'watti-5.png']}
+                imagenes={['watti-1.jpg', 'watti-2.jpg', 'watti-3.jpg', 'watti-4.jpg', 'watti-5.jpg']}
               />
 
             </Grid>
