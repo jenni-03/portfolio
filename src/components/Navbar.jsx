@@ -6,9 +6,7 @@ import { ContactPageTwoTone, ContactsTwoTone, DarkMode, InfoTwoTone, StarsRounde
 import { IconButton } from '@mui/material'
 import { useTheme } from '../context/Context'
 
-const urlCv = 'https://drive.google.com/file/d/1gpsUDdixWEPIA4je3tPsbSb8IaHbVoY3/view?usp=sharing'
-
-const urlImg = 'https://raw.githubusercontent.com/jenni-03/portfolio/main/src/assets/'
+const urlCv = 'https://drive.google.com/file/d/1380z42sxvEqtw_iXYPtLdoxXJ-UNB57H/view?usp=sharing'
 
 const Navbar = () => {
   const { darkTheme, toggleTheme } = useTheme()
@@ -45,7 +43,7 @@ const Navbar = () => {
       <nav className='mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8' aria-label='Global'>
         <div className='flex lg:flex-1'>
           <a href='#about' className='swing text-lg font-semibold leading-6' onClick={handleScroll}>
-            Portfolio <span aria-hidden='true'>&rarr;</span>
+            Portafolio <span aria-hidden='true'>&rarr;</span>
           </a>
         </div>
         <div className='flex lg:hidden'>
@@ -59,13 +57,13 @@ const Navbar = () => {
         </div>
         <div className='hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-12 '>
           <a href='#about' className='swing text-lg font-semibold leading-6 ' onClick={handleScroll}>
-            About <span aria-hidden='true'>&rarr;</span>
+            Sobre mi <span aria-hidden='true'>&rarr;</span>
           </a>
           <a href='#projects' className='swing text-lg font-semibold leading-6 ' onClick={handleScroll}>
-            Projects
+            Proyectos
           </a>
           <a href='#contact' className='swing text-lg font-semibold leading-6 ' onClick={handleScroll}>
-            Contact
+            Contacto
           </a>
 
         </div>
@@ -79,7 +77,7 @@ const Navbar = () => {
             className={`pulse text-lg font-semibold rounded-full ${darkTheme ? 'text-white bg-violet-900 hover:bg-violet-700 hover:text-white py-2 px-4 border-2 border-violet-900' : 'text-violet-700 hover:bg-violet-700 hover:text-white py-2 px-4 border-2 border-violet-700'} `}
             onClick={() => window.open(urlCv, '_blank')}
           >
-            <ContactPageTwoTone /> Resume
+            <ContactPageTwoTone /> Resumen
           </button>
         </div>
       </nav>
@@ -102,17 +100,17 @@ const Navbar = () => {
               <div className='py-6'>
 
                 <a href='#about' onClick={handleScroll} className={`-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 ${darkTheme ? 'text-white hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-50'}`}>
-                  About <InfoTwoTone />
+                  Sobre mi <InfoTwoTone />
                 </a>
                 <a href='#projects' onClick={handleScroll} className={`-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 ${darkTheme ? 'text-white hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-50'}`}>
-                  Projects <StarsRounded />
+                  Proyectos <StarsRounded />
                 </a>
                 <a href='#contact' onClick={handleScroll} className={`-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 ${darkTheme ? 'text-white hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-50'}`}>
-                  Contact <ContactsTwoTone />
+                  Contacto <ContactsTwoTone />
                 </a>
 
                 <a onClick={() => window.open(urlCv, '_blank')} className={`cursor-pointer -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 ${darkTheme ? 'text-white hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-50'}`}>
-                  Resume <ContactPageTwoTone />
+                  Resumen <ContactPageTwoTone />
                 </a>
 
               </div>

@@ -41,7 +41,7 @@ const Footer = () => {
                 <SocialButtons />
 
                 <Typography  variant='h8'>
-                    &copy; {new Date().getFullYear()} Jennifer Salazar. All rights reserved.
+                    &copy; {new Date().getFullYear()} Jennifer Dayana Salazar Rodriguez.
                 </Typography>
             </Stack>
         </Container>

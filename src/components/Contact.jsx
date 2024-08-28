@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <section id='contact' className={`${darkTheme ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} relative isolate overflow-hidden px-6 pb-12 sm:pb-32 lg:px-8`}>
       <div className='mx-auto max-w-2xl lg:max-w-4xl'>
-        <h2 className='text-center text-3xl font-bold tracking-tight sm:text-4xl mb-7'>Send an email</h2>
+        <h2 className='text-center text-3xl font-bold tracking-tight sm:text-4xl mb-7'>Contáctame:</h2>
 
         <blockquote className='sm:text-center text-xl font-semibold leading-8  sm:text-2xl sm:leading-9'>
 

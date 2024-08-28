@@ -91,7 +91,7 @@ const Project = ({ title, img, tech, github, darkTheme, descripcion, imagenes })
         </div>
 
         {
-          title != "Nuvi App" ?
+          title == "Simulador UFPSPRO" ?
             <div className="mt-4 grid grid-cols-2 justify-center gap-4">
               {
                 imagenes.map((item, index) => {

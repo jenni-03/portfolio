@@ -8,6 +8,7 @@ const Technologies = () => {
 
   const technologies = [
     { url: 'flutter.png', alt: 'Flutter' },
+    { url: 'kotlin.png', alt: 'Kotlin' },
     { url: `${darkTheme ? 'java-dark.webp' : 'java.webp'}`, alt: 'Java' },
     { url: 'js.webp', alt: 'Javascript' },
     { url: 'dart.png', alt: 'Dart' },
@@ -30,7 +31,7 @@ const Technologies = () => {
     >
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <h2 className='text-center text-3xl font-bold tracking-tight sm:text-4xl'>
-          Technologies
+          Tecnologías
         </h2>
         <div className='mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5'>
           {technologies.map((technology) => {
