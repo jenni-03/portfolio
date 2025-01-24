@@ -7,16 +7,17 @@ const Technologies = () => {
   const { darkTheme } = useTheme()
 
   const technologies = [
+    { url: 'spring-boot.webp', alt: 'Springboot' },
+    { url: 'node.webp', alt: 'Node JS' },
+    { url: `${darkTheme ? 'react-dark.webp' : 'react.webp'}`, alt: 'React' },
+    { url: 'angular.webp', alt: 'Angular' },
     { url: 'flutter.png', alt: 'Flutter' },
     { url: 'kotlin.png', alt: 'Kotlin' },
+    { url: 'html.webp', alt: 'HTML' },
+    { url: 'css.svg', alt: 'CSS' },
     { url: `${darkTheme ? 'java-dark.webp' : 'java.webp'}`, alt: 'Java' },
     { url: 'js.webp', alt: 'Javascript' },
     { url: 'dart.png', alt: 'Dart' },
-    { url: 'spring-boot.webp', alt: 'Springboot' },
-    { url: 'node.webp', alt: 'Node JS' },
-    { url: 'angular.webp', alt: 'Angular' },
-    { url: 'html.webp', alt: 'HTML' },
-    { url: 'css.svg', alt: 'CSS' },
     { url: 'mongo.webp', alt: 'Mongo DB' },
     { url: `${darkTheme ? 'github-dark.webp' : 'github.webp'}`, alt: 'Github' },
     { url: 'bootstrap.webp', alt: 'Bootstrap' },

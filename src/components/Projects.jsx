@@ -9,7 +9,7 @@ const Projects = () => {
     <div className={`${darkTheme ? 'bg-gray-800' : ''} pt-28 pb-10 sm:pb-20`} id='projects'>
       <div className='mx-auto max-w-8xl px-4 lg:px-8'>
         <div className='mx-auto max-w-2xl text-center'>
-          <h2 className={`text-3xl font-bold tracking-tight ${darkTheme ? 'text-white' : 'text-gray-900'} sm:text-4xl`}>Algunos proyectos que he apoyado y desarrollado</h2>
+          <h2 className={`text-3xl font-bold tracking-tight ${darkTheme ? 'text-white' : 'text-gray-900'} sm:text-4xl`}>Proyectos en los que he participado y liderado</h2>
         </div>
         <Container>
           <Grid container spacing={3} sx={{ py: 5 }}>
@@ -18,8 +18,9 @@ const Projects = () => {
                 title='Watti App'
                 tech={
                     [
-                      { nombre: 'Kotlin', icono: 'kotlin.png' },
-                      { nombre: 'Node JS', icono: 'node.webp' }
+                      { nombre: 'Dart', icono: 'dart.png' },
+                      { nombre: 'Flutter', icono: 'flutter.png' },
+                      { nombre: 'Springboot', icono: 'spring-boot.webp' }
                     ]
                 }
                 darkTheme={darkTheme}
@@ -33,8 +34,7 @@ const Projects = () => {
                 title='Nuvi App'
                 tech={
                     [
-                      { nombre: 'Dart', icono: 'dart.png' },
-                      { nombre: 'Flutter', icono: 'flutter.png' },
+                      { nombre: 'React Native', icono: `${darkTheme ? 'react-dark.webp' : 'react.webp'}` },
                       { nombre: 'Node JS', icono: 'node.webp' }
                     ]
                 }

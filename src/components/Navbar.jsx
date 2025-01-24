@@ -6,7 +6,7 @@ import { ContactPageTwoTone, ContactsTwoTone, DarkMode, InfoTwoTone, StarsRounde
 import { IconButton } from '@mui/material'
 import { useTheme } from '../context/Context'
 
-const urlCv = 'https://drive.google.com/file/d/1380z42sxvEqtw_iXYPtLdoxXJ-UNB57H/view?usp=sharing'
+const urlCv = 'https://drive.google.com/file/d/1sxLRAJ0FZq2hPqlJyCZF79ggzp5oCP2S/view?usp=sharing'
 
 const Navbar = () => {
   const { darkTheme, toggleTheme } = useTheme()

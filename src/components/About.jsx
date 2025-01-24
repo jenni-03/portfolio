@@ -24,11 +24,11 @@ const About = () => {
                     <Grid container direction="row" justifyContent="space-between" alignItems="center" >
                         <Grid item xs={12} sm={6} md={6} textAlign="left">
                             <div>
-                                <h2 className="text-lg font-bold tracking-tight sm:text-lg mb-10">Hola 👋, soy Jennifer </h2>
+                                <h2 className="text-lg font-bold tracking-tight sm:text-lg mb-10">Hola 👋, soy Jennifer Salazar</h2>
                                 <h2 className="text-6xl font-bold tracking-tight sm:text-5xl mb-10">Ingeniera de sistemas en formación</h2>
 
                                 <p className="mt-6 text-xl leading-8">
-                                    Desarrolladora de software entusiasta en busca de una oportunidad laboral para aplicar mis habilidades y conocimientos.
+                                    Desarrolladora de software con experiencia en desarrollo web y móvil. Persona autodidacta, proactiva y orientada a resultados.
                                 </p>
                             </div>
                         </Grid>
