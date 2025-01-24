@@ -11,12 +11,12 @@ const Skills = () => {
 
         <div className='sm:text-center text-lg font-semibold sm:text-2xl'>
           <p className='mb-8'>
-            Tengo una excelente capacidad para trabajar en equipo y comunicarme eficazmente. Busco una oportunidad estimulante que me permita aplicar mis aptitudes
-            y experiencia en un entorno de trabajo colaborativo.
+          Excelente capacidad para trabajar en equipo y comunicarme eficazmente. Busco una oportunidad desafiante que me permita aplicar 
+          mis habilidades y experiencia en un entorno colaborativo.
           </p>
           <p>
-            Me apasiona aprovechar todos los recursos en línea disponibles con el objetivo de convertirme en una desarrolladora competente, capaz de encontrar soluciones
-            sofisticadas a problemas complejos y exigentes.
+          Me apasiona aprovechar los recursos disponibles en línea y mi capacidad de aprendizaje continuo para desarrollar soluciones 
+          innovadoras a problemas complejos y exigentes.
           </p>
         </div>
 

@@ -33,7 +33,7 @@ const About = () => {
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'end' } }}>
-                            <Avatar src='https://raw.githubusercontent.com/jenni-03/portfolio/main/src/assets/perfil.jpeg' sx={{ width: '20rem', height: '20rem', cursor: 'pointer', ':hover': { transform: 'scale(1.05)' } }} onClick={handleScroll} />
+                            <Avatar src='https://raw.githubusercontent.com/jenni-03/portfolio/main/src/assets/foto-p.jpg' sx={{ width: '20rem', height: '20rem', cursor: 'pointer', ':hover': { transform: 'scale(1.05)' } }} onClick={handleScroll} />
                         </Grid>
                     </Grid>
                 </div>
