@@ -1,19 +1,19 @@
-import About from '../components/About'
-import Footer from '../components/Footer'
-import Skills from '../components/Skills'
-import Contact from '../components/Contact'
-import Navbar from '../components/Navbar'
-import Technologies from '../components/Technologies'
-import { ArrowUpward } from '@mui/icons-material'
-import Projects from '../components/Projects'
+import About from "../components/About";
+import Footer from "../components/Footer";
+import Skills from "../components/Skills";
+import Contact from "../components/Contact";
+import Navbar from "../components/Navbar";
+import Technologies from "../components/Technologies";
+import { ArrowUpward } from "@mui/icons-material";
+import Projects from "../components/Projects";
 
-function Home () {
+function Home() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
@@ -25,11 +25,16 @@ function Home () {
       <Contact />
       <Footer />
 
-      <button aria-label='Arrow Up' id='arrowUp' className='scroll-to-top' onClick={scrollToTop}>
-        <ArrowUpward className='scroll-to-top-icon' />
+      <button
+        aria-label="Arrow Up"
+        id="arrowUp"
+        className="scroll-to-top"
+        onClick={scrollToTop}
+      >
+        <ArrowUpward className="scroll-to-top-icon" />
       </button>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
