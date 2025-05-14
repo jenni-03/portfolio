@@ -19,7 +19,7 @@ const ImagenEstiloGrande = styled("img")({
   height: "100%",
   transition: "transform 0.3s ease",
   ":hover": {
-    transform: "scale(1.5)",
+    transform: "scale(1.1)",
   },
   borderRadius: "5%",
 });
@@ -104,7 +104,7 @@ const Project = ({
 
         <div className="mt-4">{descripcion}</div>
 
-        {title == "Simulador UFPSPRO" ? (
+        {title === "Simulador UFPSPRO" || title === "Mediador Pedagógico" ? (
           <div className="mt-4 grid grid-cols-2 justify-center gap-4">
             {imagenes.map((item, index) => {
               return (
